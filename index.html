@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#535557" />
+  <meta name="description"
+    content="UAI BARBEARIA - Tradição mineira e estilo moderno. Corte, barba, corte + barba, relaxamento, pezinho, depilação, coloração, pigmentação e sobrancelha em Carlos Prates, Belo Horizonte. Confira a tabela de preços e agende pelo WhatsApp." />
+  <title>UAI BARBEARIA | Tradição Mineira, Estilo Moderno</title>
+
+  <!-- ==================== GOOGLE FONTS ==================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- ==================== FONT AWESOME ==================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ==================== FAVICON ==================== -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- ==================== CSS ==================== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==========================================================
+       HEADER / NAVBAR
+  =========================================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo (arquivo logo.png na raiz do projeto) -->
+      <a href="#home" class="logo" aria-label="UAI BARBEARIA - Página inicial">
+        <img src="logo.png" alt="UAI BARBEARIA" class="logo__img" width="77" height="60" />
+      </a>
+
+      <!-- Navegação -->
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+
+        <!-- CTA principal (também aparece no menu mobile) -->
+        <a href="https://wa.me/5531998133184?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20UAI%20BARBEARIA."
+          class="btn btn--gold nav__cta" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Agendar Agora
+        </a>
+      </nav>
+
+      <!-- Botão Hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false"
+        aria-controls="nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==========================================================
+         HERO
+    =========================================================== -->
+    <!-- SUBSTITUIR: troque a URL da imagem de fundo no CSS (.hero)
+         pela sua própria foto do ambiente da barbearia -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <span class="hero__badge reveal"><i class="fa-solid fa-location-dot"></i> Carlos Prates &bull; Belo Horizonte</span>
+
+        <h1 class="hero__title reveal">
+          Tradição mineira,<br />
+          <span class="text-gold">estilo moderno.</span>
+        </h1>
+
+        <p class="hero__subtitle reveal">
+          Barbearia de bairro, simples e acolhedora. Aqui o atendimento é próximo,
+          o preço é justo e o serviço é feito com capricho do jeito mineiro.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="https://wa.me/5531998133184?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20UAI%20BARBEARIA."
+            class="btn btn--gold btn--lg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar no WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn--ghost btn--lg">Ver Serviços</a>
+        </div>
+
+        <!-- Prova social rápida -->
+        <div class="hero__stats reveal">
+          <div class="stat">
+            <strong>+10</strong>
+            <span>Anos de estrada</span>
+          </div>
+          <div class="stat">
+            <strong>5.0<i class="fa-solid fa-star"></i></strong>
+            <span>Avaliação dos clientes no Google</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SERVIÇOS
+    =========================================================== -->
+    <section class="section" id="servicos">
+      <div class="container">
+
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Tabela de Preços</span>
+          <h2 class="section__title">Nossos serviços e <span class="text-gold">valores</span></h2>
+          <p class="section__desc">
+            Preços fixos e transparentes. Escolha o seu serviço e agende em segundos pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- 1. CORTE -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-scissors"></i></div>
+            <h3 class="card__title">Corte</h3>
+            <p class="card__text">
+              Corte na máquina e tesoura, com acabamento na navalha e finalização com pomada.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 35,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20um%20Corte" class="card__link" target="_blank"
+                rel="noopener" aria-label="Agendar Corte por 35 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. BARBA -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h3 class="card__title">Barba</h3>
+            <p class="card__text">
+              Modelagem completa da barba com toalha quente, óleo e acabamento na navalha.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 20,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20uma%20Barba" class="card__link" target="_blank"
+                rel="noopener" aria-label="Agendar Barba por 20 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. CORTE + BARBA (destaque) -->
+          <article class="card card--featured reveal">
+            <span class="card__tag">Mais Pedido</span>
+            <div class="card__icon"><i class="fa-solid fa-crown"></i></div>
+            <h3 class="card__title">Corte + Barba</h3>
+            <p class="card__text">
+              O combo da casa: corte completo e barba feita no mesmo atendimento, com desconto.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 40,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20Corte%20%2B%20Barba" class="card__link"
+                target="_blank" rel="noopener" aria-label="Agendar Corte mais Barba por 40 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. RELAXAMENTO -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-spa"></i></div>
+            <h3 class="card__title">Relaxamento</h3>
+            <p class="card__text">
+              Massagem capilar relaxante com hidratação e finalização. Ideal para aliviar o estresse.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 30,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20um%20Relaxamento" class="card__link"
+                target="_blank" rel="noopener" aria-label="Agendar Relaxamento por 30 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. PEZINHO -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-shoe-prints"></i></div>
+            <h3 class="card__title">Pezinho</h3>
+            <p class="card__text">
+              Acabamento do pezinho e contorno do cabelo na máquina ou navalha, na régua.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 10,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20um%20Pezinho" class="card__link" target="_blank"
+                rel="noopener" aria-label="Agendar Pezinho por 10 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. DEPILAÇÃO -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="card__title">Depilação</h3>
+            <p class="card__text">
+              Remoção de pelos com cera quente no nariz, orelha e pescoço. Rápido e sem desconforto.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 25,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20uma%20Depila%C3%A7%C3%A3o" class="card__link"
+                target="_blank" rel="noopener" aria-label="Agendar Depilação por 25 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. COLORAÇÃO -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-palette"></i></div>
+            <h3 class="card__title">Coloração</h3>
+            <p class="card__text">
+              Coloração masculina para cobrir os grisalhos ou mudar o tom, com produto profissional.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 35,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20uma%20Colora%C3%A7%C3%A3o" class="card__link"
+                target="_blank" rel="noopener" aria-label="Agendar Coloração por 35 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 8. PIGMENTAÇÃO -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+            <h3 class="card__title">Pigmentação</h3>
+            <p class="card__text">
+              Preenchimento de falhas na barba e no cabelo com pigmento natural. Discreto e duradouro.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 30,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20uma%20Pigmenta%C3%A7%C3%A3o" class="card__link"
+                target="_blank" rel="noopener" aria-label="Agendar Pigmentação por 30 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 9. SOBRANCELHA -->
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-eye"></i></div>
+            <h3 class="card__title">Sobrancelha</h3>
+            <p class="card__text">
+              Design e alinhamento da sobrancelha na navalha ou pinça, respeitando o seu traço.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">R$ 5,00</span>
+              <a href="https://wa.me/5531998133184?text=Quero%20agendar%20uma%20Sobrancelha" class="card__link"
+                target="_blank" rel="noopener" aria-label="Agendar Sobrancelha por 5 reais">
+                Agendar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SOBRE
+    =========================================================== -->
+    <section class="section section--alt" id="sobre">
+      <div class="container about">
+
+        <!-- Coluna 1: imagem -->
+        <!-- SUBSTITUIR: troque a URL abaixo pela sua foto -->
+        <figure class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80"
+            alt="Barbeiro finalizando um corte masculino na UAI Barbearia" loading="lazy" />
+          <figcaption class="about__badge">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>Desde 2014</strong>
+              <span>Servindo BH com estilo</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Coluna 2: texto -->
+        <div class="about__content reveal">
+          <span class="section__eyebrow">Sobre Nós</span>
+          <h2 class="section__title">Aqui o <span class="text-gold">"uai"</span> é levado a sério</h2>
+
+          <p class="about__text">
+            Nascida em Carlos Prates, a <strong>UAI BARBEARIA</strong> é uma barbearia de bairro:
+            simples, acolhedora e tocada por gente humilde que gosta do que faz. Aqui você é
+            atendido sem pressa e sem frescura, sai da cadeira com a autoestima renovada —
+            e ainda leva um bom dedo de prosa de quebra.
+          </p>
+          <p class="about__text">
+            Nossos profissionais são especialistas em degradê, navalhado, barba desenhada e visagismo.
+            Cada atendimento é único, porque cada rosto tem a sua melhor versão.
+          </p>
+
+          <!-- Benefícios -->
+          <ul class="benefits">
+            <li><i class="fa-solid fa-circle-check"></i> Atendimento com hora marcada — sem filas</li>
+            <li><i class="fa-solid fa-circle-check"></i> Preço justo, combinado antes de começar</li>
+            <li><i class="fa-solid fa-circle-check"></i> Ambiente simples e acolhedor, de barbearia de bairro</li>
+          </ul>
+
+          <a href="https://wa.me/5531998133184?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20UAI%20BARBEARIA."
+            class="btn btn--gold" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Quero agendar
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       FORMAS DE PAGAMENTO (faixa discreta, fim da página)
+  =========================================================== -->
+  <section class="payments" aria-label="Formas de pagamento">
+    <div class="container payments__inner">
+      <p class="payments__label"><i class="fa-solid fa-wallet"></i> Formas de pagamento</p>
+      <ul class="payments__list">
+        <li><i class="fa-solid fa-credit-card"></i> Crédito</li>
+        <li><i class="fa-solid fa-money-bill-wave"></i> Débito</li>
+        <li><i class="fa-brands fa-pix"></i> Pix</li>
+        <li><i class="fa-solid fa-money-bill"></i> Dinheiro</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER / CONTATO
+  =========================================================== -->
+  <footer class="footer" id="contato">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <!-- Coluna 1: Marca -->
+        <div class="footer__col">
+          <a href="#home" class="logo logo--footer" aria-label="UAI BARBEARIA">
+            <img src="logo.png" alt="UAI BARBEARIA" class="logo__img" width="100" height="78" />
+          </a>
+          <p class="footer__text">
+            Tradição mineira, estilo moderno. A barbearia do homem que se cuida,
+            no coração de Carlos Prates.
+          </p>
+          <div class="footer__social">
+            <a href="https://instagram.com/uaibarbearia" target="_blank" rel="noopener" aria-label="Instagram UAI Barbearia">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5531998133184" target="_blank" rel="noopener" aria-label="WhatsApp UAI Barbearia">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Contato -->
+        <div class="footer__col">
+          <h3 class="footer__title">Contato</h3>
+          <ul class="footer__list">
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/5531998133184" target="_blank" rel="noopener">(31) 99813-3184</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://instagram.com/uaibarbearia" target="_blank" rel="noopener">@uaibarbearia</a>
+            </li>
+          </ul>
+          <a href="https://wa.me/5531998133184?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20UAI%20BARBEARIA."
+            class="btn btn--gold btn--sm" target="_blank" rel="noopener">Agendar Agora</a>
+        </div>
+
+        <!-- Coluna 3: Horário -->
+        <div class="footer__col">
+          <h3 class="footer__title">Horário</h3>
+          <ul class="footer__list footer__list--plain">
+            <li><i class="fa-regular fa-clock"></i> <span>Terça a Sexta: <strong>08h às 20h</strong></span></li>
+            <li><i class="fa-regular fa-clock"></i> <span>Sábado: <strong>08h às 18h</strong></span></li>
+            <li><i class="fa-regular fa-circle-xmark"></i> <span>Domingo e Segunda: Fechado</span></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Endereço -->
+        <div class="footer__col">
+          <h3 class="footer__title">Endereço</h3>
+          <ul class="footer__list footer__list--plain">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Rua Padre Eustáquio, 1541<br />Carlos Prates &ndash; Belo Horizonte/MG</span>
+            </li>
+          </ul>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rua+Padre+Eust%C3%A1quio+1541+Carlos+Prates+Belo+Horizonte"
+            class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+            <i class="fa-solid fa-diamond-turn-right"></i> Ver no mapa
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> UAI BARBEARIA. Todos os direitos reservados.</p>
+        <p>Feito com <i class="fa-solid fa-heart text-gold"></i> em Belo Horizonte.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5531998133184?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20UAI%20BARBEARIA."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==================== JS ==================== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
